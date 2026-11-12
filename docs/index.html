@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#ececec">
+  <meta name="description" content="母恒宇的个人作品集。北京林业大学风景园林本科生，展示景观设计、建筑设计、城市设计与摄影。">
+  <title>母恒宇 MU HENGYU — 个人作品集</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect x='.5' y='.5' width='63' height='63' fill='%23f8f8f8' stroke='%23d9d9d9'/%3E%3C/svg%3E">
+  <link rel="preload" href="assets/grotesk-medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style.css">
+  <script src="projects.js" defer></script>
+  <script src="vendor/three.js" defer></script><script src="motion-shaders.js" defer></script><script src="magazine-renderer.js" defer></script>
+  <script src="loader.js" defer></script><script src="identity-data.js" defer></script><script src="about-photo-data.js" defer></script><script src="about-photo.js" defer></script><script src="logo.js" defer></script><script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#scene">跳转至作品</a>
+  <div class="intro" id="intro" aria-hidden="true"><div class="intro-name">MU<br>HENGYU</div><div class="intro-shade"></div></div>
+  <header class="header">
+    <a class="identity" href="#work" aria-label="个人作品集首页"><strong>母恒宇<sup>©</sup></strong><span>MU HENGYU<br>风景园林 · 个人作品集</span></a>
+    <div class="navigation"><span class="muted menu-label">导航</span><nav aria-label="主导航"><button data-view="work" class="active">作品</button><button data-view="about">关于</button><button data-view="playground">作品索引</button><button data-view="contact">联系</button></nav></div>
+    <div class="location small">北京林业大学<br><span class="muted">风景园林本科 · 2027 届</span></div>
+    <div class="inquiries small"><span class="muted">联系</span><a href="mailto:3201742260@qq.com">3201742260@qq.com</a></div>
+  </header>
+  <main>
+    <section id="work" class="work-view" aria-label="作品展示">
+      <div class="category-filter category-filter-home" role="group" aria-label="作品分类">
+        <button data-category="全部" class="selected" aria-pressed="true">全部</button><button data-category="景观设计" aria-pressed="false">景观设计</button><button data-category="建筑设计" aria-pressed="false">建筑设计</button><button data-category="城市设计" aria-pressed="false">城市设计</button><button data-category="摄影" aria-pressed="false">摄影</button><button data-category="作品集" aria-pressed="false">作品集</button>
+      </div>
+      <div class="project-meta small" aria-live="polite"><div class="role"><span class="muted">角色</span><p id="project-role"></p></div><div class="launch"><span class="muted">时间</span><p id="project-date"></p></div><div class="recognition"><span class="muted">信息</span><p id="project-recognition"></p></div></div>
+      <div id="scene" class="scene" tabindex="0" role="region" aria-label="作品轮播：滚动、滑动或使用方向键浏览"><div id="cards" class="cards"></div></div>
+      <div class="project-list" id="project-list" aria-label="选择项目"></div><div class="swatches" id="swatches" aria-hidden="true"></div>
+      <div class="selection"><span class="muted small">作品展示</span><span class="current" id="current">01</span><span class="small total">/19</span></div>
+      <button class="scroll-hint muted small" id="scroll-next">滚动浏览 <span>↓</span></button>
+      <div class="mobile-controls"><button id="previous" aria-label="上一个项目">←</button><button id="next" aria-label="下一个项目">→</button></div>
+      <button class="showreel small" id="showreel">作品预览 <span>▶</span></button>
+    </section>
+    <section id="about" class="page-view" hidden>
+ <div class="about-intro"><div class="page-heading"><span class="muted small">关于我 · ABOUT</span><h1>母恒宇<br><span class="profile-subtitle">风景园林本科生</span></h1></div><figure class="about-photo-frame" aria-label="生活照片展示框"><img id="about-photo" alt="母恒宇的生活照片" hidden></figure></div>
+ <div class="about-body"><h2>从场地调研、空间分析到模型与图纸，探索景观与城市空间的设计。</h2>
+ <div class="about-columns"><p>我就读于北京林业大学风景园林专业，预计于 2027 年毕业。本科期间学习景观设计、城市设计、建筑设计与园林植物学，GPA 为 3.5/4.0。</p><p>在深圳市城市规划设计研究院实习期间，我参与了规划设计竞赛与景观更新项目，完成前期分析、场地建模和方案表达，也跟进过现场搭建。这个作品集按景观设计、建筑设计、城市设计与摄影整理。</p></div>
+ <div class="profile-sections">
+ <section><h3>教育背景</h3><div class="profile-entry"><span class="profile-date">2023.09 — 2027.06（预计）</span><h4>北京林业大学 · 风景园林本科</h4><p>GPA 3.5/4.0。景观设计课程 95 分，建筑设计课程 93 分。</p></div></section>
+ <section><h3>实习经历</h3><div class="profile-entry"><span class="profile-date">2026.06 — 2026.09</span><h4>深圳市城市规划设计研究院 · 设计师助理（实习）</h4><p>参与“百年京张 AI 创新带城市设计竞赛”的案例研究、场地研判与方案讨论，使用 Rhino 和 Grasshopper 完成场地及重点景观建模，并参与策略图与效果图表达。</p></div><div class="profile-entry"><span class="profile-date">2025.11 — 2026.03</span><h4>深圳市城市规划设计研究院 · 设计师助理（实习）</h4><p>参与南沙湾城市设计竞赛的 GIS 前期分析与资料整理；参与南山区创智云城仙元路界面微更新，完成景观装置建模，并跟进现场安装、尺度核对与图纸调整。</p></div></section>
+ <section><h3>工具与表达</h3><div class="profile-entry"><p>场地分析：ArcGIS Pro。建模与设计：Rhino、Grasshopper、AutoCAD。图面与展示：Photoshop、InDesign、D5 Render、PPT、Excel；结合 AI 工具辅助效果图与模型分析。英语：CET-6。</p></div></section>
+ <section><h3>竞赛与实践</h3><div class="profile-entry"><span class="profile-date">2026</span><h4>WUPENiCity 城市可持续调研报告国际竞赛</h4><p>二等奖 · 核心组员。负责低碳干预数据处理及核心策略图纸制作。</p></div><div class="profile-entry"><span class="profile-date">2025</span><h4>中国风景园林学会大学生设计竞赛</h4><p>荣誉奖 · 项目负责人。承担方案设计与统筹组织，推进方案深化、图纸整合和文本排版。</p></div></section>
+ </div><button class="text-link" data-view="contact">联系我 ↗</button><div class="about-signature">MU<br>HENGYU</div></div></section>
+    <section id="playground" class="page-view" hidden><div class="page-heading"><span class="muted small">作品分类</span><h1>作品索引</h1><p class="small muted">按分类浏览项目与作品集</p></div><div class="category-filter category-filter-grid" role="group" aria-label="索引分类"><button data-category="全部" class="selected" aria-pressed="true">全部</button><button data-category="景观设计" aria-pressed="false">景观设计</button><button data-category="建筑设计" aria-pressed="false">建筑设计</button><button data-category="城市设计" aria-pressed="false">城市设计</button><button data-category="摄影" aria-pressed="false">摄影</button><button data-category="作品集" aria-pressed="false">作品集</button></div><div class="play-grid" id="play-grid"></div></section>
+    <section id="contact" class="page-view" hidden><div class="page-heading"><span class="muted small">母恒宇 · MU HENGYU</span><h1>联系我</h1></div><div class="contact-grid"><div><p class="muted small">电子邮箱</p><a class="contact-email" href="mailto:3201742260@qq.com">3201742260@qq.com</a></div><!-- private-contact --><div><p class="muted small">手机</p><a href="tel:+8619980316313">+86 199 8031 6313</a></div><div><p class="muted small">微信</p><span class="placeholder-contact">19980316313</span></div><!-- /private-contact --><div><p class="muted small">学校与专业</p><span class="placeholder-contact">北京林业大学<br>风景园林本科</span></div><div><p class="muted small">作品方向</p><span class="placeholder-contact">景观 · 建筑 · 城市设计 · 摄影</span></div></div><!-- private-contact --><a class="text-link credits-toggle resume-attachment" id="resume-attachment" href="assets/resume-mu-hengyu.pdf" target="_blank" rel="noopener" aria-label="查看母恒宇个人简历 PDF">简历附件 ↗</a><!-- /private-contact --><div class="contact-wordmark" aria-hidden="true">MU HENGYU</div></section>
+  </main>
+  <dialog id="page-transition" class="page-transition" aria-label="正在切换页面"><div class="transition-panel"></div><div class="transition-label"></div></dialog>
+  <dialog id="project-dialog" class="project-dialog"><button class="dialog-close" autofocus aria-label="关闭项目">关闭 ×</button><div class="detail-image"><img id="detail-image" alt=""></div><div class="detail-copy"><span class="small muted" id="detail-category"></span><h2 id="detail-title"></h2><p id="detail-description"></p><div class="detail-facts small"><p><span class="muted">角色</span><span id="detail-role"></span></p><p><span class="muted">时间</span><span id="detail-date"></span></p><p><span class="muted">信息</span><span id="detail-awards"></span></p></div><button id="detail-source" class="text-link" disabled>项目链接待添加</button><button id="detail-next" class="text-link">下一个项目 →</button></div></dialog>
+  <dialog id="reel-dialog" class="reel-dialog"><button class="dialog-close" autofocus aria-label="关闭作品预览">关闭 ×</button><span class="reel-label small">作品预览</span><img id="reel-image" alt=""><div class="reel-caption"><span id="reel-title"></span><span id="reel-number" class="small"></span></div></dialog>
+  <div id="cursor" class="cursor" aria-hidden="true">查看 ↗</div>
+  <noscript><p class="noscript">请启用 JavaScript 以浏览作品集。</p></noscript>
+</body>
+</html>
